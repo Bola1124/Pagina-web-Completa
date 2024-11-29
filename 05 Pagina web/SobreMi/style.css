@@ -1,0 +1,330 @@
+body {
+    background-color: var(--color2);
+}
+
+:root {
+    --color1: rgb(94, 4, 122);
+    --color2: rgb(144, 8, 185);
+    --color3: rgb(183, 90, 211);
+    --color4: rgb(222, 147, 244);
+}
+
+
+button {
+    all: unset;
+}
+
+.button {
+    position: relative;
+    display: inline-flex;
+    height: 3.5rem;
+    align-items: center;
+    border-radius: 9999px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: Segoe UI;
+    font-size: 1.2rem;
+    font-weight: 640;
+    color: #fafaf6;
+    letter-spacing: -0.06em;
+    background-color: transparent; /* Asegura que el botón tiene fondo transparente inicialmente */
+    transition: background-color 0.3s ease; /* Asegura que el cambio de fondo sea suave */
+}
+
+.button-item {
+    background-color: transparent;
+    color: #1d1d1f;
+}
+
+.button-item .button-bg {
+    border-color: var(--color3);
+    background-color: var(--color3);
+}
+
+.button-inner,
+.button-inner-hover,
+.button-inner-static {
+    pointer-events: none;
+    display: block;
+}
+
+.button-inner {
+    position: relative;
+}
+
+.button-inner-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(70%);
+}
+
+.button-bg {
+    overflow: hidden;
+    border-radius: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: transform 1.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.button-bg,
+.button-bg-layer,
+.button-bg-layers {
+    display: block;
+}
+
+.button-bg-layers {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -60%;
+    aspect-ratio: 1 / 1;
+    width: max(200%, 10rem);
+}
+
+.button-bg-layer {
+    border-radius: 9999px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+}
+
+.button-bg-layer.-purple {
+    background-color: rgba(163, 116, 255);
+}
+
+.button-bg-layer.-turquoise {
+    background-color: rgba(23, 241, 209);
+}
+
+.button-bg-layer.-yellow {
+    --tw-bg-opacity: 1;
+    background-color: var(--color3, var(--tw-bg-opacity));
+}
+
+.button:hover .button-inner-static {
+    opacity: 0;
+    transform: translateY(-70%);
+    transition: transform 1.4s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.3s linear;
+}
+
+.button:hover .button-inner-hover {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 1.4s cubic-bezier(0.19, 1, 0.22, 1), opacity 1.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.button:hover .button-bg-layer {
+    transition: transform 1.3s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.3s linear;
+}
+
+.button:hover .button-bg-layer-1 {
+    transform: scale(1);
+}
+
+.button:hover .button-bg-layer-2 {
+    transition-delay: 0.1s;
+    transform: scale(1);
+}
+
+.button:hover .button-bg-layer-3 {
+    transition-delay: 0.2s;
+    transform: scale(1);
+}
+
+
+.button:active, .button:focus {
+    background-color: var(--color3); 
+}
+
+
+.button:active .button-bg-layer-1,
+.button:focus .button-bg-layer-1 {
+    background-color: var(--color3);
+}
+  
+.yo, .historial {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont2 {
+    background-color: var(--color3);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.cont2 .apartado {
+    background-color: var(--color4);
+    width: 1400px;
+    height: 250px;
+    padding: 20px;
+    border-radius:10px;
+}
+
+.cont2 .apartado p{
+   font-size: 20px;
+   font-family: monospace;
+   text-align: justify; 
+}
+
+.cont2 .apartado2 p{
+    font-size: 20px;
+    font-family: monospace;
+    text-align: justify;
+ }
+
+.cont2 .apartado2 {
+    background-color: var(--color4);
+    width: 1400px;
+    height: 350px;
+    padding: 20px;
+    border-radius:10px;
+}
+
+.cont2 .apartado2 h2,h3 {
+    text-align: left;
+
+    margin-left: 50px;  
+}
+
+.cont2 .apartado h2, .cont2 .apartado h3 {
+    text-align: left;
+    margin-left: 50px;  
+}
+
+.cont2 .apartado img {
+    float: left;
+    width: 250px;
+    height: auto;
+    margin-right: 20px; 
+}
+
+.cont2 .apartado2 img {
+    float: left;
+    width: 250px;
+    height: auto;
+    margin-right: 20px; 
+}
+
+.cont {
+    background-color: var(--color4);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.cont button{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cont img {
+    width: 150px; 
+    height: auto; 
+    border-radius: 50%; 
+    border: 2px solid indigo; 
+    margin-bottom: 15px; 
+}
+
+.cont h1 {
+    font-size: 1.5rem;
+    color: indigo;
+    margin: 0;
+}
+
+.cont ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cont ul li {
+    font-size: 18px;          
+    font-weight: bold;  
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    text-align: center;         
+    margin: 10px 0;    
+}
+
+.Habilidades {
+    background-color: var(--color3);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 97%; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.Habilidades p{
+    font-weight: bold;
+}
+
+.contH {
+    background-color: var(--color4);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 95%; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+}
+.contH .primeras ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.contH .primeras p{
+    font-weight: normal;
+    font-size: 23px;
+    margin-left: 100px;
+    margin-right: 75px;
+    text-align: justify;
+}
+.contH ul li {
+    font-size: 28px;          
+    font-weight: bold;  
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    text-align: left;         
+    margin: 10px 0;    
+    display: flex; /* Para alinear los elementos horizontalmente */
+    justify-content: space-between; /* Coloca el texto a la izquierda y la imagen a la derecha */
+    align-items: center; /* Alinea verticalmente los elementos */
+    margin: 10px 0; /* Espaciado entre los elementos */
+}
+
+.contH .primeras h1{
+    font-size: 28px;
+    font-weight: bold;  
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contH .primeras img{
+    width: 250px; 
+    height: auto;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+.contH .primeras .segunda p{
+    margin-left: 90px;
+}
+
+.contH .primeras .tercera p{
+    margin-left: 120px;
+}

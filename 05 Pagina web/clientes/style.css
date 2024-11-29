@@ -1,0 +1,149 @@
+:root {
+    --negro: #191919;
+    --moradooscuro: #52057B;
+    --morado: #892CDC;
+    --azul:rgb(18, 48, 174);
+    --moradoclaro: #BC6FF1;
+    --gris_claro: #B4B4B8;
+}
+
+body{
+    background-color: var(--gris_claro);
+}
+
+h1 {
+    font-size: 2rem !important;
+    color: var(--moradooscuro) !important;
+    text-align: center !important;
+  }
+
+  span {
+    color: var(--morado) !important;
+    font-size: 1.5rem !important;
+    text-align: center !important;
+  }
+
+  a {
+    text-decoration: none !important;
+  }
+  
+  a:hover h1, a:hover h1 span {
+    color: var(--azul) !important;
+  }
+  
+    h2 {
+      font-size: 2rem !important;
+      text-align: center;
+      color: var(--moradooscuro);
+      margin: 0;
+      text-align: center;
+    }
+
+    h3 {    
+        text-align: center;
+        color: var(--moradooscuro);
+        margin: 0;
+        font-size: 2rem;  
+      }
+
+.header{
+    background-color: var(--moradoclaro);
+    width: 89rem;
+    margin: 1.5rem auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: baseline;
+    padding-top: 1.5rem;
+}
+
+img {
+    width: 100%;
+}
+.imagen{
+    width: 15%;
+}
+
+.header-1{
+    margin-left: 0.5rem;
+    font-size: 2.75rem;
+    color: var(--morado);
+}
+
+fieldset {
+    width: 70rem;
+    margin: 0 auto;
+    border: none;    
+}
+
+.campos {
+    width: 70rem;
+    margin: 0 auto;
+    background-color: var(--gris_claro);
+    padding: 1.5rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+
+legend {
+    text-transform: uppercase;
+    background-color: var(--moradooscuro);
+    font-size: 1.25rem;
+    padding: 0.5rem 2.75rem;
+    
+}
+
+.pad-legend {
+    color: var(--negro);    
+    text-transform: uppercase;
+    background-color: var(--moradooscuro);
+    font-size: 1.25rem;
+    padding: 0.5rem 2.75rem;
+    
+}
+
+.input-text {
+    width: 100%;
+    font-size: 1.5rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: solid var(--gris_claro) 1.75px;
+}
+
+.etiqueta {
+    font-size: 1.25rem;
+}
+
+.main {
+    width: 90rem;
+    margin: 0 auto;
+    background-color: var(--moradooscuro);
+    padding: 3rem 0 4rem 0;
+}
+
+.boton-margin{
+    width: 75rem;
+    margin: 1.5rem auto 0 auto;
+    text-align: right;
+}
+
+.boton {
+    background-color: var(--moradoclaro);
+    font-size: 1.25rem;
+    padding: 0.25rem .85rem;
+    border: none;
+    text-transform: uppercase;
+    color: var(--negro);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: var(--morado);
+}
+
+.mi-table tbody tr:hover {
+    background-color: var(--moradooscuro) !important;
+    color: var(--negro) !important;
+}

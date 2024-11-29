@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de temperatura</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="cont">
+        <h1>CONVERTIDOR DE TEMPERATURA</h1>
+        <p>Ingresa la temperatura a convertir:</p>
+        <input type="number" placeholder="GRADOS" id="EntradaUser">
+        <p>Selecciona a que quieres convertir</p>
+        <select id="opcionGrados">
+            <option value="1">C a F</option>
+            <option value="2">F a C</option>
+            <option value="3">C a K</option>
+            <option value="4">C a R</option>
+            <option value="5">F a K</option>
+            <option value="6">F a R</option>
+            <option value="7">K a C</option>
+            <option value="8">K a F</option>
+            <option value="9">K a R</option>
+            <option value="10">R a C</option>
+            <option value="11">R a F</option>
+            <option value="12">R a K</option>
+        </select>
+    </div>
+    <button onclick="Convertir()">CONVERTIR</button>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
